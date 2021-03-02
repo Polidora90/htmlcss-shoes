@@ -8,6 +8,8 @@
 
 nav {
     width: 100%;
+    position: absolute;
+    top: 0;
 }
 
 nav li {
@@ -20,7 +22,6 @@ nav li {
     width: 50px;
     margin-right: 60px;
     position: relative;
-    /* poi cambiare in fixed? */
 }
 
 nav li:last-child {
@@ -28,7 +29,8 @@ nav li:last-child {
 }
 
 nav ul {
-    text-align: right;
+    position: fixed;
+    right: 0;
 }
 
 nav a {
@@ -38,6 +40,23 @@ nav a {
     top: 50%;
     right: 50%;  
     transform: translate(50%, -50%);  
+}
+
+/* main */
+
+main section:first-child {
+    height: 100vh;
+    background-color: #ff0000;
+}
+
+main section:nth-child(2) {
+    height: 100vh;
+    background-color: #008000;
+}
+
+main section:nth-child(3) {
+    height: 100vh;
+    background-color: #ffff00;
 }
 
 /* utility classes */
